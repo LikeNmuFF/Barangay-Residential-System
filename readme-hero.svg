@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Barangay Residential System banner</title>
+  <desc id="desc">Animated skyline with pulsing location nodes for the Barangay Residential Mini System.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1f3a"/>
+      <stop offset="100%" stop-color="#1e4d92"/>
+    </linearGradient>
+    <linearGradient id="windowGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffecb3"/>
+      <stop offset="100%" stop-color="#ffd54f"/>
+    </linearGradient>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="3" />
+    </filter>
+    <style>
+      @keyframes rise {
+        0% { transform: translateY(6px); opacity: 0.6; }
+        50% { transform: translateY(-6px); opacity: 1; }
+        100% { transform: translateY(6px); opacity: 0.6; }
+      }
+      @keyframes pulse {
+        0% { r: 4; opacity: 0.5; }
+        50% { r: 10; opacity: 0.9; }
+        100% { r: 4; opacity: 0.5; }
+      }
+      @keyframes sweep {
+        0% { transform: translateX(-1200px); }
+        100% { transform: translateX(1200px); }
+      }
+      text { font-family: "Segoe UI", "Inter", system-ui, -apple-system, sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="360" fill="url(#bg)"/>
+
+  <!-- Moving light streak -->
+  <g opacity="0.35" filter="url(#soft)" transform="translate(0 40)">
+    <rect x="-1200" y="40" width="1200" height="14" rx="7" fill="#5dc0ff" style="animation:sweep 9s linear infinite;"/>
+  </g>
+
+  <!-- Hills -->
+  <path d="M0 260 Q200 210 420 250 T840 260 T1200 240 L1200 360 L0 360 Z" fill="#0f2c55" opacity="0.9"/>
+  <path d="M0 275 Q260 235 520 270 T1000 275 T1200 265 L1200 360 L0 360 Z" fill="#12386a" opacity="0.75"/>
+
+  <!-- Buildings -->
+  <g fill="#0c1d37">
+    <rect x="120" y="150" width="80" height="140" rx="4"/>
+    <rect x="230" y="135" width="90" height="155" rx="4"/>
+    <rect x="360" y="165" width="80" height="125" rx="4"/>
+    <rect x="470" y="140" width="95" height="150" rx="4"/>
+    <rect x="620" y="155" width="85" height="135" rx="4"/>
+    <rect x="740" y="170" width="75" height="120" rx="4"/>
+    <rect x="850" y="145" width="90" height="145" rx="4"/>
+  </g>
+
+  <!-- Windows -->
+  <g fill="url(#windowGlow)">
+    <!-- repeat simple window grid -->
+    <g transform="translate(130 170)">
+      <rect width="12" height="16" rx="2"/>
+      <rect x="24" width="12" height="16" rx="2"/>
+      <rect x="48" width="12" height="16" rx="2"/>
+      <rect y="30" width="12" height="16" rx="2"/>
+      <rect x="24" y="30" width="12" height="16" rx="2"/>
+      <rect x="48" y="30" width="12" height="16" rx="2"/>
+    </g>
+    <g transform="translate(245 155)">
+      <rect width="12" height="16" rx="2"/>
+      <rect x="26" width="12" height="16" rx="2"/>
+      <rect x="52" width="12" height="16" rx="2"/>
+      <rect y="32" width="12" height="16" rx="2"/>
+      <rect x="26" y="32" width="12" height="16" rx="2"/>
+      <rect x="52" y="32" width="12" height="16" rx="2"/>
+    </g>
+    <g transform="translate(374 183)">
+      <rect width="12" height="16" rx="2"/>
+      <rect x="24" width="12" height="16" rx="2"/>
+      <rect x="48" width="12" height="16" rx="2"/>
+      <rect y="30" width="12" height="16" rx="2"/>
+      <rect x="24" y="30" width="12" height="16" rx="2"/>
+      <rect x="48" y="30" width="12" height="16" rx="2"/>
+    </g>
+    <g transform="translate(485 160)">
+      <rect width="12" height="16" rx="2"/>
+      <rect x="26" width="12" height="16" rx="2"/>
+      <rect x="52" width="12" height="16" rx="2"/>
+      <rect y="32" width="12" height="16" rx="2"/>
+      <rect x="26" y="32" width="12" height="16" rx="2"/>
+      <rect x="52" y="32" width="12" height="16" rx="2"/>
+    </g>
+    <g transform="translate(633 175)">
+      <rect width="12" height="16" rx="2"/>
+      <rect x="24" width="12" height="16" rx="2"/>
+      <rect x="48" width="12" height="16" rx="2"/>
+      <rect y="30" width="12" height="16" rx="2"/>
+      <rect x="24" y="30" width="12" height="16" rx="2"/>
+      <rect x="48" y="30" width="12" height="16" rx="2"/>
+    </g>
+    <g transform="translate(752 190)">
+      <rect width="12" height="16" rx="2"/>
+      <rect x="24" width="12" height="16" rx="2"/>
+      <rect x="48" width="12" height="16" rx="2"/>
+      <rect y="30" width="12" height="16" rx="2"/>
+      <rect x="24" y="30" width="12" height="16" rx="2"/>
+      <rect x="48" y="30" width="12" height="16" rx="2"/>
+    </g>
+    <g transform="translate(865 165)">
+      <rect width="12" height="16" rx="2"/>
+      <rect x="24" width="12" height="16" rx="2"/>
+      <rect x="48" width="12" height="16" rx="2"/>
+      <rect y="30" width="12" height="16" rx="2"/>
+      <rect x="24" y="30" width="12" height="16" rx="2"/>
+      <rect x="48" y="30" width="12" height="16" rx="2"/>
+    </g>
+  </g>
+
+  <!-- Location pulses -->
+  <g fill="#4de1ff">
+    <circle cx="180" cy="205" r="6">
+      <animate attributeName="r" values="6;12;6" dur="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="320" cy="185" r="6">
+      <animate attributeName="r" values="6;12;6" dur="3.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="540" cy="190" r="6">
+      <animate attributeName="r" values="6;12;6" dur="2.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="205" r="6">
+      <animate attributeName="r" values="6;12;6" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="890" cy="195" r="6">
+      <animate attributeName="r" values="6;12;6" dur="2.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.9s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Title box -->
+  <g transform="translate(80 55)">
+    <rect x="0" y="0" width="520" height="110" rx="14" fill="rgba(6,14,30,0.6)" stroke="#4de1ff" stroke-width="2"/>
+    <text x="26" y="52" font-size="32" font-weight="700" fill="#e8f6ff">Barangay Residential Mini System</text>
+    <text x="26" y="86" font-size="16" fill="#c8e7ff">Track residents, generate certificates, and keep local records tidy.</text>
+  </g>
+
+  <!-- Floating badge -->
+  <g transform="translate(980 70)" style="animation:rise 4.5s ease-in-out infinite;">
+    <rect x="-18" y="-18" width="120" height="120" rx="16" fill="rgba(255,255,255,0.07)" stroke="#5dc0ff" stroke-width="2"/>
+    <path d="M18 40 L50 16 L82 40 L82 74 L50 98 L18 74 Z" fill="#2dd4bf" opacity="0.85"/>
+    <text x="50" y="66" font-size="12" fill="#0b1f3a" text-anchor="middle" font-weight="700">Secure</text>
+  </g>
+</svg>
